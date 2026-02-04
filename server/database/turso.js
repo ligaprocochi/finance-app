@@ -17,8 +17,10 @@ function getDb() {
     } else {
       // Development: Use local SQLite file
       console.log('💻 Connecting to local SQLite database...');
+      const path = require('path');
+      const dbPath = path.join(__dirname, '../data/finance.db');
       db = createClient({
-        url: 'file:./server/data/finance.db'
+        url: `file:${dbPath}`
       });
     }
   }

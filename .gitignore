@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+client/dist/
+
+# Database files
+server/data/*.db
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Lock files (optional - uncomment if you want to track them)
+# package-lock.json
